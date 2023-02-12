@@ -13,7 +13,7 @@ N/A
 ## Usage
 
 Once you run the index file, the web page will be displayed.
-By clicking on each of the link at th etop of the page you will be redirected to the relevant paragraph on the page.
+By clicking on each of the link at the top of the page you will be redirected to the relevant paragraph on the page.
 
 ## Credits
 
