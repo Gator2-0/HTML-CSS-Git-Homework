@@ -1,13 +1,27 @@
+/*apply to everything*/
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/*apply to everything in the body*/
 body {
     background-color: #d9dcd6;
 }
 
+/*apply to every anchor*/
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/*apply to all paragraph*/
+p {
+    font-size: 16px;
+}
+
+/* attribute of the entire header banner*/
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -15,15 +29,18 @@ body {
     color: #ffffff;
 }
 
+/* attribute of the company name in the header */
 .header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
-.header h1 .seo {
+/*Change the color of the "SEO" in the company in the header*/
+.header .seo {
     color: #d9dcd6;
 }
 
+/*attribute of the div in the header in which the links are stored*/
 .header div {
     padding-top: 15px;
     margin-right: 20px;
@@ -32,24 +49,16 @@ body {
     font-size: 20px;
 }
 
-.header div ul {
-    list-style-type: none;
-}
 
-.header div ul li {
+/*attribute of the links in the header. They now appear next to one another*/
+.header li {
     display: inline-block;
     margin-left: 25px;
 }
 
-a {
-    color: #ffffff;
-    text-decoration: none;
-}
 
-p {
-    font-size: 16px;
-}
 
+/*defines the size and attribute of the main photo on the page*/
 .hero {
     height: 800px;
     width: 100%;
@@ -59,6 +68,24 @@ p {
     background-position: center;
 }
 
+/*refer to the block in the middle of the page where the main content is.*/
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/*defines the attribute for each subject in the content section*/
+.online-reputation-management, .search-engine-optimization, .social-media-marketing {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+/*both ".float" modify where the image will appear in the subject.*/
 .float-left {
     float: left;
     margin-right: 25px;
@@ -69,12 +96,18 @@ p {
     margin-left: 25px;
 }
 
-.content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
+/*attribute for every img in the "content" div*/
+.content img{
+    max-height: 200px;
 }
 
+/*attribute for every h2 in the "content" div*/
+.content h2{
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/*refer to the column on the right of the page*/
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -84,110 +117,30 @@ p {
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
+    
 }
 
-.benefit-lead {
+/*attribute for each sectoin of the "benefits" div*/
+
+.benefit-lead, .benefit-brand, .benefit-cost {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
+/*attribute for every h3 in the "benefits" div*/
+.benefits h3{
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
+/*attribute for every img in the "benefits" div */
+.benefits img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
+/*apply to everything in the footer*/
 .footer {
     padding: 30px;
     clear: both;
@@ -195,6 +148,7 @@ p {
     text-align: center;
 }
 
+/*modify th efont size of the h2 in the footer*/
 .footer h2 {
     font-size: 20px;
 }
