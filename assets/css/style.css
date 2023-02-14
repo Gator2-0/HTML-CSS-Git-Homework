@@ -10,18 +10,19 @@ body {
     background-color: #d9dcd6;
 }
 
-/*apply to every anchor*/
+/*set color to every anchor*/
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
-/*apply to all paragraph*/
+/*set font size in all paragraph*/
 p {
     font-size: 16px;
 }
 
-/* attribute of the entire header banner*/
+/* attribute of the entire header banner
+set color of text , backgorund color and font.*/
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -40,7 +41,8 @@ p {
     color: #d9dcd6;
 }
 
-/*attribute of the div in the header in which the links are stored*/
+/*attribute of the div in the header in which the links are stored.
+They will appear on the right.*/
 .header div {
     padding-top: 15px;
     margin-right: 20px;
@@ -75,7 +77,7 @@ p {
     margin-left: 20px;
 }
 
-/*defines the attribute for each subject in the content section*/
+/*defines the attribute for each subject in the content section.*/
 .online-reputation-management, .search-engine-optimization, .social-media-marketing {
     margin-bottom: 20px;
     padding: 50px;
